@@ -39,7 +39,7 @@ struct peserta{
 
 int main(){
         int jml_index;
-
+        int a;
         cout << "Input N : " ; cin >> jml_index;
 
         peserta psrt[jml_index];
@@ -51,9 +51,9 @@ int main(){
             cout << endl;
         }
 
-        int maks=psrt[0].buah;
+        int maks=psrt[a].buah;
         string namapemenang;
-        for (int a=1;a<jml_index;a++){
+        for (a=1;a<jml_index;a++){
             if( psrt[a].buah>maks){
                 maks= psrt[a].buah;
                 namapemenang=psrt[a].nama;
